@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Get There Incremental</title>
+    <title>Game UI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="gameContainer">
-        <h1>Get There Incremental</h1>
-        <div id="ui">
-            <div id="gameUI" style="display:none;">
-                <p>Level: <span id="levelDisplay">1</span> | Time: <span id="timeDisplay">0</span>s | Difficulty: <span id="difficultyDisplay">1.0</span></p>
-                <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="startUI">
+            <h1>Welcome to the Game!</h1>
+            <button id="startButton">Start Game</button>
+        </div>
+        <div id="gameUI" style="display:none;">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div id="scoreBoard">
+                <p>Score: <span id="score">0</span></p>
             </div>
-            <div id="shopUI" style="display:none;">
-                <h2>Shop - Score: <span id="scoreDisplay">0</span></h2>
-                <h3>Upgrades</h3>
-                <div id="upgradesContainer"></div>
-                <h3>Difficulty</h3>
-                <div id="difficultyContainer"></div>
-                <button id="nextLevel">Next Level</button>
-            </div>
-            <div id="startUI">
-                <h2>Welcome to Get There Incremental!</h2>
-                <p>Reach the goal before time runs out!</p>
-                <button id="startButton">Start Game</button>
+        </div>
+        <div id="shopUI" style="display:none;">
+            <h2>Shop</h2>
+            <div id="shopItems">
+                <!-- Shop items will be dynamically inserted here -->
             </div>
         </div>
     </div>
