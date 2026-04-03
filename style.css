@@ -1,0 +1,20 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; color: #333; }
+#gameContainer { width: 90%; max-width: 900px; background: white; border-radius: 15px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); padding: 30px; }
+h1 { text-align: center; color: #667eea; margin-bottom: 20px; }
+h2 { color: #764ba2; margin-bottom: 15px; }
+h3 { color: #667eea; margin-top: 20px; margin-bottom: 10px; }
+#ui { display: flex; flex-direction: column; align-items: center; }
+#gameUI { width: 100%; text-align: center; }
+#gameUI p { margin-bottom: 15px; font-size: 16px; font-weight: bold; }
+canvas { border: 3px solid #667eea; background: #f0f0f0; border-radius: 8px; display: block; margin: 0 auto; }
+#shopUI { width: 100%; }
+#upgradesContainer, #difficultyContainer { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+.upgrade-btn, .difficulty-btn { padding: 12px 20px; border: none; border-radius: 8px; background: #667eea; color: white; cursor: pointer; font-size: 14px; font-weight: bold; transition: all 0.3s; }
+.upgrade-btn:hover, .difficulty-btn:hover { background: #764ba2; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+.upgrade-btn:disabled, .difficulty-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+#nextLevel { padding: 15px 40px; background: #667eea; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s; margin-top: 20px; }
+#nextLevel:hover { background: #764ba2; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+#startUI { text-align: center; }
+#startButton { padding: 15px 40px; background: #667eea; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; transition: all 0.3s; }
+#startButton:hover { background: #764ba2; transform: scale(1.05); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
